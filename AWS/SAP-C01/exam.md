@@ -8,3 +8,9 @@
     - Implement cost-control strategies.
 - Content Outline:
     ![./images/exam/content_outline.png](./images/exam/content_outline.png)
+- Exam Content
+    - Response Types
+    - There are two types of questions on the examination:
+        - Multiple choice: Has one correct response and three incorrect responses (distractors).
+        - Multiple response: Has two or more correct responses out of five or more options. 
+- Score: 100 ~ 1000,  with a minimum passing score of 750.
