@@ -1,2 +1,2 @@
 ## Study Note
-- [AWS/SAP-C01](./AWS/SAP-C01/exam.md)
+- [AWS/SAP-C01](./AWS/SAP-C01/contents.md)
