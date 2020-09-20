@@ -6,4 +6,5 @@
     - Migrate complex, multi-tier applications on AWS.
     - Design and deploy enterprise-wide scalable operations on AWS.
     - Implement cost-control strategies.
-![./images/exam/content_outline.png](./images/exam/content_outline.png)
+- Content Outline:
+    ![./images/exam/content_outline.png](./images/exam/content_outline.png)
