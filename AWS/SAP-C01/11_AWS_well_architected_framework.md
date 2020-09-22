@@ -32,15 +32,24 @@ business context.
 
 ## Security
 ### Design Principles
-- Implement a strong identity foundation 
-- Enable traceability
-- Apply security at all layers
-- Automate security best practices
-- Protect data in transit and at rest
-- Keep people away from data
-- Prepare fore securiy events 
+- Implement a strong identity foundation:
+    - Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize identity management, and aim to eliminate reliance on long-term static credentials.
+    - the principle of least privilege: 用戶創建時都無權限，需要再開。
+    - eliminate reliance on long-term static credentials: 盡量不要用 AWS access key & access ID，可用 AWS STS (AWS Security Token Service)
+- Enable traceability:
+    - Monitor, alert, and audit actions and changes to your environment in real time. Integrate log and metric collection with systems to automatically investigate and take action.  
+- Apply security at all layers:
+    - Apply a defense in depth approach with multiple security controls. Apply to all layers (for example, edge of network, VPC, load balancing, every instance and compute service, operating system, application, and code).
+- Automate security best practices:
+    - Automated software-based security mechanisms improve your ability to securely scale more rapidly and cost-effectively. Create secure architectures, including the implementation of controls that are defined and managed as code in version-controlled templates
+- Protect data in transit and at rest:
+    - Classify your data into sensitivity levels and use mechanisms, such as encryption, tokenization, and access control where appropriate.
+- Keep people away from data:
+    - Use mechanisms and tools to reduce or eliminate the need for direct access or manual processing of data. This reduces the risk of mishandling or modification and human error when handling sensitive data.
+- Prepare fore securiy events:
+    - Prepare for an incident by having incident management and investigation policy and processes that align to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery.  
 
-## Definition
+### Definition
 - Security
 - Identity and Access Management
 - Detection
