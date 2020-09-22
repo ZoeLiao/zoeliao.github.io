@@ -18,7 +18,7 @@ business context.
 ---
 
 ## Operational Excellence
-### Design Principles:
+### Design Principles
 - Perform operations as code
 - Make frequent, small, reversible changes
 - Refine operations procedures frequently
@@ -32,3 +32,21 @@ business context.
 
 ## Security
 ### Design Principles
+- Implement a strong identity foundation 
+- Enable traceability
+- Apply security at all layers
+- Automate security best practices
+- Protect data in transit and at rest
+- Keep people away from data
+- Prepare fore securiy events 
+
+## Definition
+- Security
+- Identity and Access Management
+- Detection
+- Infrastructure Protection
+- Data Protection
+- Incident Response
+
+### Whitepaper
+- [Security Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
