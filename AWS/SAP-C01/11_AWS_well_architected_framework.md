@@ -10,3 +10,7 @@
 |Reliability |The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. This paper provides in-depth, best practice guidance for implementing reliable workloads on AWS.|
 |Performance Efficiency |The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.|
 |Cost Optimization |The ability to run systems to deliver business value at the lowest price point.|
+
+- Architecture: being how components (code, configuration, AWS Resources) work together in a workload (identify a set of components that together deliver business value). How components communicate and interact is often the focus of architecture diagrams.
+- When architecting workloads, you make trade-offs between pillars based on your
+business context.

@@ -1,3 +1,25 @@
 # The Study Notes of AWS Certified Solutions Architect Professional (SAP-C01)
-- [00. About AWS Certified Solutions Architect Professional (SAP-C01)](./exam.md)
-- [01. AWS Well-Architected Framework](./well_architected_framework.md)
+- [0.0 About AWS Certified Solutions Architect Professional (SAP-C01)](./00_exam.md)
+- 1.0 Whitepapers:
+    - [1.1 AWS well architected framework](./11_AWS_well_architected_framework.md)
+    - [1.2 Overview of security process](./12_Overview_of_security_process.md)
+    - 1.3 Disaster Recovery
+    - 1.4 Cloud Migration 
+- 2.0 Migration & Transfer:
+    - TODO
+- 3.0 Management & Governanace tools
+    - TODO
+- 4.0 Networking & Content Delivery 
+    - TODO
+- 5.0 Security, Identity & Compliance
+    - TODO
+- 6.0 Storage:
+    - TODO
+- 7.0 Database:
+    - TODO
+- 8.0 Compute:
+    - TODO
+- 9.0 Analytice
+    - TODO
+- 10.0 Integration Tools
+    - TODO

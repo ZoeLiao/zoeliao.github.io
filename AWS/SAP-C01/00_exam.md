@@ -8,9 +8,12 @@
     - Implement cost-control strategies.
 - Content Outline:
     ![./images/exam/content_outline.png](./images/exam/content_outline.png)
-- Exam Content
-    - Response Types
-    - There are two types of questions on the examination:
-        - Multiple choice: Has one correct response and three incorrect responses (distractors).
-        - Multiple response: Has two or more correct responses out of five or more options. 
-- Score: 100 ~ 1000,  with a minimum passing score of 750.
+- About exam:
+    - Score: 100 ~ 1000,  with a minimum passing score of 750.
+    - Time: 170 minutes
+    - Questions:
+        - 75 questions 
+        - Response type:
+            - Multiple choice: Has one correct response and three incorrect responses (distractors).
+            - Multiple response: Has two or more correct responses out of five or more options. 
+- Learning Path: [https://jayendrapatil.com/aws-certified-solution-architect-professional-exam-learning-path/](https://jayendrapatil.com/aws-certified-solution-architect-professional-exam-learning-path/)
