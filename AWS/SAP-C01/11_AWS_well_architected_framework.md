@@ -14,3 +14,21 @@
 - Architecture: being how components (code, configuration, AWS Resources) work together in a workload (identify a set of components that together deliver business value). How components communicate and interact is often the focus of architecture diagrams.
 - When architecting workloads, you make trade-offs between pillars based on your
 business context.
+
+---
+
+## Operational Excellence
+### Design Principles:
+- Perform operations as code
+- Make frequent, small, reversible changes
+- Refine operations procedures frequently
+- Anticipate failure
+- Learn from all operational failure
+
+### Whitepaper
+- [Operational Excellence Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)
+
+---
+
+## Security
+### Design Principles

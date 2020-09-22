@@ -2,9 +2,10 @@
 - [0.0 About AWS Certified Solutions Architect Professional (SAP-C01)](./00_exam.md)
 - 1.0 Whitepapers:
     - [1.1 AWS well architected framework](./11_AWS_well_architected_framework.md)
-    - [1.2 Overview of security process](./12_Overview_of_security_process.md)
-    - 1.3 Disaster Recovery
-    - 1.4 Cloud Migration 
+    - 1.2 Security
+    - 1.3 Reliability
+    - 1.4 Performance Efficiency
+    - 1.5 Cost Optimization
 - 2.0 Migration & Transfer:
     - TODO
 - 3.0 Management & Governanace tools
