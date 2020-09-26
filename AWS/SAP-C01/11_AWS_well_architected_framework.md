@@ -1,15 +1,21 @@
 # 01. AWS Well-Architected Framework
-- Reference (total page - 94): [Official Guide - 2020/07](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)
+- Reference:
+    - [AWS Well-Architected Framework - 2020/07](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)
+    - [Cloud Native](https://www.oreilly.com/library/view/cloud-native/9781492053811/)
+
 
 ## The five pillars of the AWS Well-Architected Framework 
+The five concepts are ubiquitous, you can find them in the documentations of GCP and Azure.
+- GCP: [https://cloud.google.com/architecture/framework](https://cloud.google.com/architecture/framework)
+- Azure: [https://docs.microsoft.com/zh-tw/azure/architecture/framework/](https://docs.microsoft.com/zh-tw/azure/architecture/framework/) 
 
 | Name | Description|
 |------|------------|
-|Operational Excellence |The ability to support development and run workloads effectively, gain insight into their operations, and to continuously improve supporting processes and procedures to deliver business value.|
-|Security |The security pillar encompasses the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security.|
-|Reliability |The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. This paper provides in-depth, best practice guidance for implementing reliable workloads on AWS.|
-|Performance Efficiency |The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.|
-|Cost Optimization |The ability to run systems to deliver business value at the lowest price point.|
+|Operational Excellence (卓越營運)|The ability to support development and run workloads effectively, gain insight into their operations, and to continuously improve supporting processes and procedures to deliver business value.|
+|Security (安全)|The security pillar encompasses the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security.|
+|Reliability (可靠性)|The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. This paper provides in-depth, best practice guidance for implementing reliable workloads on AWS.|
+|Performance Efficiency (效能效率)|The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.|
+|Cost Optimization (成本最佳化)|The ability to run systems to deliver business value at the lowest price point.|
 
 - Architecture: being how components (code, configuration, AWS Resources) work together in a workload (identify a set of components that together deliver business value). How components communicate and interact is often the focus of architecture diagrams.
 - When architecting workloads, you make trade-offs between pillars based on your
@@ -17,9 +23,9 @@ business context.
 
 ---
 
-## Operational Excellence
+## 1. Operational Excellence (卓越營運)
 ### Design Principles
-- Perform operations as code
+- Perform operations as code, such as infrastructure as code (IaC), e.g., AWS Cloud Formation
 - Make frequent, small, reversible changes
 - Refine operations procedures frequently
 - Anticipate failure
@@ -30,12 +36,10 @@ business context.
 
 ---
 
-## Security
+## 2. Security (安全)
 ### Design Principles
 - Implement a strong identity foundation:
     - Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize identity management, and aim to eliminate reliance on long-term static credentials.
-    - the principle of least privilege: 用戶創建時都無權限，需要再開。
-    - eliminate reliance on long-term static credentials: 盡量不要用 AWS access key & access ID，可用 AWS STS (AWS Security Token Service)
 - Enable traceability:
     - Monitor, alert, and audit actions and changes to your environment in real time. Integrate log and metric collection with systems to automatically investigate and take action. 
 - Apply security at all layers:
@@ -100,3 +104,18 @@ business context.
 
 ### Whitepaper
 - [Security Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
+
+---
+
+## 3. Reliability (可靠性)
+- The Reliability pillar includes the reliability pillar encompasses the ability of a work- load to perform its intended function correctly and consistently when it’s expected to. this includes the ability to operate and test the workload through its total lifecycle.
+
+### Design Principles
+- 1.Automatically recover from failure
+- 2.Test recovery procedures
+- 3.Scale horizontally to increase aggregate workload availability
+- 4.Stop guessing capacity
+- 5.Manage change in automation 
+
+### Whitepaper
+- [Reliability Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
