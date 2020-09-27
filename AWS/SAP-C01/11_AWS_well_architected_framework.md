@@ -5,7 +5,7 @@
 
 
 ## The five pillars of the AWS Well-Architected Framework 
-The principles are ubiquitous, you can find them in the documentations of GCP and Azure, also, you can apply to any clouds, hyprid coulds or on-premise environments.
+The principles are ubiquitous, you can find them in the documentations of GCP and Azure. Moreover, you can apply them to any clouds, hyprid coulds or on-premise environments.
 - GCP: [https://cloud.google.com/architecture/framework](https://cloud.google.com/architecture/framework)
 - Azure: [https://docs.microsoft.com/zh-tw/azure/architecture/framework/](https://docs.microsoft.com/zh-tw/azure/architecture/framework/) 
 
@@ -145,3 +145,54 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
 
 ### Whitepaper
 - [Reliability Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
+
+---
+
+## 4. Performance Efficiency (效能效率)
+### Design Principles
+- Democratize advanced technologies 
+    - Make advanced technology implementation easier for your team by delegating complex tasks to your cloud vendor. Rather than asking your IT team to learn about hosting and running a new technology, consider consuming the technology as a service. For example, NoSQL databases, media transcoding, and machine learning are all technologies that require specialized ex- pertise. In the cloud, these technologies become services that your team can consume, allowing your team to focus on product development rather than resource provisioning and management.
+- Go global in minutes 
+    - Deploying your workload in multiple AWS Regions around the world allows you to provide lower latency and a better experience for your customers at minimal cost. 
+- Use serverless architectures
+    - Serverless architectures remove the need for you to run and maintain physical servers for traditional compute activities. For example, serverless storage services can act as static websites (removing the need for web servers) and event services can host code. This removes the operational burden of managing physical servers, and can lower transactional costs because managed services operate at cloud scale.
+- Experiment more often
+    - With virtual and automatable resources, you can quickly carry out comparative testing using different types of instances, storage, or config urations.
+- Consider mechanical sympathy
+    - Understand how cloud services are consumed and always use the technology approach that aligns best with your workload goals. For example, consider data access patterns when you select database or storage approaches.
+
+### Definition
+- Selection
+    - The optimal solution for a particular workload varies, and solutions often combine multiple approaches. Well-architected workloads use multiple solutions and enable different features to improve performance. 
+    - Compute:
+        - Selecting compute resources that meet your requirements, performance needs, and provide great efficiency of cost and effort will enable you to accomplish more with the same number of resources. When evaluating compute options, be aware of your requirements for workload performance and cost requirements and use this to make informed decisions. 
+        - Types:
+            - Instances:
+                - are virtualized servers, allowing you to change their capabilities with a button or an API call. Because resource decisions in the cloud aren’t fixed, you can experiment with different server types. At AWS, these virtual server instances come in different families and sizes, and they offer a wide variety of capabilities, including solid-state drives (SSDs) and graphics processing units (GPUs).
+            - Containers:
+                - are amethod of operating system virtualization that allow you to run an application and its dependencies in resource-isolated processes. AWS Fargate is serverless compute for containers or Amazon EC2 can be used if you need control over the installation, configuration, and management of your compute environment. You can also choose from multiple container orchestration platforms: Amazon Elastic Container Service (ECS) or Amazon Elastic Kubernetes Service (EKS). 
+            - Functions:
+                - abstract the execution environment from the code you want to execute. For example, AWS Lambda allows you to execute code without running an instance.
+    - Storage
+        - Object Storage:
+            - provides a scalable, durable platform to make data accessible from any internet location for user-generated content, active archive, serverless computing, Big Data storage or backup and recovery. Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.
+        - Block Storage:
+            - provides highly available, consistent, low-latency block storage for each virtual host and is analogous to direct-attached storage (DAS) or a Storage Area Network (SAN). Amazon Elastic Block Store (Amazon EBS) is designed for workloads that require persistent storage accessible by EC2 instances that helps you tune applications with the right storage capacity, performance and cost.
+        - File Storage: 
+            - provides access to a shared file system across multiple systems. File storage solutions like Amazon Elastic File System (EFS) are ideal for use cases, such as large content repositories, development environments, media stores, or user home directories. Amazon FSx makes it easy and cost effective to launch and run popular file systems so you can leverage the rich feature sets and fast performance of widely used open source and commercially-licensed file systems.
+        - Q. How do you select your storage solution?
+            - The optimal storage solution for a system varies based on the kind of access method (block, file, or object), patterns of access (random or sequential), required throughput, frequency of access (online, offline, archival), frequency of update (WORM, dynamic), and availability and durability constraints. Well-architected systems use multiple storage solutions and enable different features to improve performance and use resources efficiently.
+    - Database
+        - The cloud offers purpose-built database services that address different problems pre- sented by your workload. You can choose from many purpose-built database engines including relational, key-value, document, in-memory, graph, time series, and ledger databases. By picking the best database to solve a specific problem (or a group of problems), you can break away from restrictive one-size-fits-all monolithic databases and focus on building applications to meet the performance needs of your customers. 
+    - Network
+        - Since the network is between all workload components, it can have great impacts, both positive and negative, on workload performance and behavior. There are also workloads that are heavily dependent on network performance such as High Perfor- mance Computing (HPC) where deep network understanding is important to increase cluster performance. You must determine the workload requirements for bandwidth, latency, jitter, and throughput. 
+        - On AWS, networking is virtualized and is available in a number of different types and configurations. This makes it easier to match your networking methods with your needs. AWS offers product features (for example, Enhanced Networking, Amazon EBS-optimized instances, Amazon S3 transfer acceleration, and dynamic Amazon CloudFront) to optimize network traffic. AWS also offers networking features (for ex- ample, Amazon Route 53 latency routing, Amazon VPC endpoints, AWS Direct Con- nect, and AWS Global Accelerator) to reduce network distance or jitter.
+- Review
+    - Cloud technologies are rapidly evolving and you must ensure that workload components are using the latest technologies and approaches to continually improve performance. You must continually evaluate and consider changes to your workload components to ensure you are meeting its performance and cost objectives. New technologies, such as machine learning and artificial intelligence (AI), can allow you to re-imagine customer experiences and innovate across all of your business workloads.  
+- Monitoring
+    - After you implement your workload, you must monitor its performance so that you can remediate any issues before they impact your customers. Monitoring metrics should be used to raise alarms when thresholds are breached. 
+- Tradeoffs
+    - When you architect solutions, think about tradeoffs to ensure an optimal approach. Depending on your situation, you could trade consistency, durability, and space for time or latency, to deliver higher performance.  
+
+### White paper
+- [Performance Efficiency Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
