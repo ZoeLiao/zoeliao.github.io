@@ -29,6 +29,7 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
 ---
 
 ## 1. Operational Excellence (卓越營運)
+
 ### Design Principles
 - Perform operations as code
     - In the cloud, you can apply the same engineering discipline that you use for application code to your entire environment. You can define your entire workload (applications, infrastructure) as code and update it with code. You can implement your operations procedures as code and automate their execu- tion by triggering them in response to events. By performing operations as code, you limit human error and enable consistent responses to events.
@@ -43,6 +44,7 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
 ---
 
 ## 2. Security (安全)
+
 ### Design Principles
 - Implement a strong identity foundation:
     - Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize identity management, and aim to eliminate reliance on long-term static credentials.
@@ -149,6 +151,7 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
 ---
 
 ## 4. Performance Efficiency (效能效率)
+
 ### Design Principles
 - Democratize advanced technologies 
     - Make advanced technology implementation easier for your team by delegating complex tasks to your cloud vendor. Rather than asking your IT team to learn about hosting and running a new technology, consider consuming the technology as a service. For example, NoSQL databases, media transcoding, and machine learning are all technologies that require specialized ex- pertise. In the cloud, these technologies become services that your team can consume, allowing your team to focus on product development rather than resource provisioning and management.
@@ -196,3 +199,30 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
 
 ### White paper
 - [Performance Efficiency Pillar](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
+
+---
+
+## Cost Optimization (成本最佳化)
+The Cost Optimization pillar includes the ability to run systems to deliver business value at the lowest price point.
+
+### Design Principles
+- Implement Cloud Financial Management
+- Adopt a consumption model
+- Measure overall efficiency
+- Stop spending money on undifferentiated heavy lifting
+- Analyze and attribute expenditure
+
+### Definition
+- Practice Cloud Financial Management
+    - e.g., use Cost Explorer, and optionally Amazon Athena and Amazon Quick- Sight with the Cost and Usage Report (CUR), to provide cost and usage awareness throughout your organization. AWS Budgets provides proactive notifications for cost and usage.
+- Expenditure and usage awareness
+    - In AWS, you create an account structure with AWS Organizations or AWS Control Tower, which provides separation and assists in allocation of your costs and usage. You can also use resource tagging to apply business and organization information to your usage and cost. Use AWS Cost Explorer for visibility into your cost and usage, or create customized dashboards and analytics with Amazon Athena and Amazon Quick- Sight. Controlling your cost and usage is done by notifications through AWS Budgets, and controls using AWS Identity and Access Management (IAM), and Service Quotas. 
+- Cost-effective resources
+    - By factoring in cost during service selection, and using tools such as Cost Explorer and AWS Trusted Advisor to regularly review your AWS usage, you can actively monitor your utilization and adjust your deployments accordingly.
+- Manage demand and supply resources
+    - In AWS, you can automatically provision resources to match the workload demand. Auto Scaling using demand or time-based approaches allow you to add and remove resources as needed. If you can anticipate changes in demand, you can save more money and ensure your resources match your workload needs. You can use Amazon API Gateway to implement throttling, or Amazon SQS to implementing a queue in your workload. These will both allow you to modify the demand on your workload components. 
+- Optimize over time
+    - As AWS releases new services and features, it's a best practice to review your existing architectural decisions to ensure they continue to be the most cost effective. As your requirements change, be aggressive in decommissioning resources, entire services, and systems that you no longer require. 
+
+### White paper
+- [Cost Optimization Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
