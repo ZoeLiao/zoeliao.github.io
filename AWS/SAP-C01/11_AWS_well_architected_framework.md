@@ -62,45 +62,90 @@ The principles are ubiquitous, you can find them in the documentations of GCP an
     - Prepare for an incident by having incident management and investigation policy and processes that align to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery. 
 
 ### Definition
-- Security
-    - To operate your workload securely, you must apply overarching best practices to every area of security.
-    - In AWS, segregating different workloads by account, based on their function and compliance or data sensitivity requirements, is a recommended approach.
+- <details>
+  <summary>Security</summary>
+  <br>
+  <ol>
+    <li>To operate your workload securely, you must apply overarching best practices to every area of security.</li>
+    <li>In AWS, segregating different workloads by account, based on their function and compliance or data sensitivity requirements, is a recommended approach.</li>
+  </ol>
+  </details>
 
-- Identity and Access Management
-    - How to:
-        - Identity and access management are key parts of an information security program, ensuring that only authenticated (signed in) and authorized (has permissions) users and components are able to access your resources, and only in a manner that you intend.
-        - For example, you should define principals (that is, accounts, users, roles, and services that can perform actions in your account), build out policies aligned with these principals, and implement strong credential management. These privilege-management elements form the core of authentication and authorization.
-    - Identity
-        - Human Identity
-        - Machine Identity
-    - Credentials must not be shared between any user or system. User access should be granted using a least-privilege approach with best practices including password re- quirements and MFA enforced. Programmatic access including API calls to AWS ser- vices should be performed using temporary and limited-privilege credentials such as those issued by the AWS Security Token Service.
+- <details>
+  <summary>Identity and Access Management</summary>
+  <br>
+  <ol>
+    <li>How to:
+        <ol>
+            <li>Identity and access management are key parts of an information security program, ensuring that only authenticated (signed in) and authorized (has permissions) users and components are able to access your resources, and only in a manner that you intend.
+            </lo>
+            <li>For example, you should define principals (that is, accounts, users, roles, and services that can perform actions in your account), build out policies aligned with these principals, and implement strong credential management. These privilege-management elements form the core of authentication and authorization.
+            </li>
+        </ol>
+    </li>
+    <li>Identity
+        <ol>
+            <li>Human Identity</li>
+            <li>Machine Identity</li>
+        </ol>
+    </li>
+    <li>Credentials must not be shared between any user or system. User access should be granted using a least-privilege approach with best practices including password re- quirements and MFA enforced. Programmatic access including API calls to AWS ser- vices should be performed using temporary and limited-privilege credentials such as those issued by the AWS Security Token Service.
+    </li>
+    </ol>
+    </details>
 
-- Detection
-    - You can use detective controls to identify a potential security threat or incident.
-    - You can also use internal auditing, an examination of controls related to information systems, to en- sure that practices meet policies and requirements and that you have set the correct automated alerting notifications based on defined conditions.
+- <details>
+  <summary>Detection</summary>
+  <br>
+  <ol>
+    <li>You can use detective controls to identify a potential security threat or incident.</li>
+    <li>You can also use internal auditing, an examination of controls related to information systems, to en- sure that practices meet policies and requirements and that you have set the correct automated alerting notifications based on defined conditions.</li>
+  </ol>
+  </details>
 
-- Infrastructure Protection
-    - Infrastructure protection encompasses control methodologies, such as defense in depth, necessary to meet best practices and organizational or regulatory obligations.
-    - For example: VPC
+- <details>
+  <summary>Infrastructure Protection</summary>
+  <br>
+  <ol>
+    <li>Infrastructure protection encompasses control methodologies, such as defense in depth, necessary to meet best practices and organizational or regulatory obligations.</li>
+    <li>For example: VPC</li>
+  </ol>
+  </details>
 
-- Data Protection
-    - In AWS, the following practices facilitate protection of data:
-        - As an AWS customer you mainta in full control over your data.
-        - AWS makes it easier for you to encrypt your data and manage keys,including regular key rotation, which can be easily automated by AWS or maintained by you.
-        - Detailed logging that contains important content, such as file access and changes, is available.
-        - AWS has designed storage systems for exceptional resiliency. For example, Amazon S3 Standard, S3 Standard–IA, S3 One Zone-IA, and Amazon Glacier are all designed to provide 99.999999999% durability of objects over a given year. This durability level corresponds to an average annual expected loss of 0.000000001% of objects.
-        - Versioning, which can be part of a larger data life cycle managementprocess, can protect against accidental overwrites, deletes, and similar harm.
-        - AWS never initiates the movement of data between Regions. Content placed in a Region will remain in that Region unless you explicitly enable a feature or leverage a service that provides that functionality.
-        - Q. How do you classify your data?
-        - Q. How do you protect your data at rest?
-        - Q. How do you protect your data in transit?
+- <details>
+  <summary>Data Protection</summary>
+  <br>
+  <ol>
+    <li>In AWS, the following practices facilitate protection of data:
+        <ol>
+        <li>As an AWS customer you mainta in full control over your data.</li>
+        <li>AWS makes it easier for you to encrypt your data and manage keys,including regular key rotation, which can be easily automated by AWS or maintained by you.</li>
+        <li>Detailed logging that contains important content, such as file access and changes, is available.</li>
+        <li>AWS has designed storage systems for exceptional resiliency. For example, Amazon S3 Standard, S3 Standard–IA, S3 One Zone-IA, and Amazon Glacier are all designed to provide 99.999999999% durability of objects over a given year. This durability level corresponds to an average annual expected loss of 0.000000001% of objects.</li>
+        <li>Versioning, which can be part of a larger data life cycle managementprocess, can protect against accidental overwrites, deletes, and similar harm.</li>
+        <li>AWS never initiates the movement of data between Regions. Content placed in a Region will remain in that Region unless you explicitly enable a feature or leverage a service that provides that functionality.</li>
+        <li>Q. How do you classify your data?</li>
+        <li>Q. How do you protect your data at rest?</li>
+        <li>Q. How do you protect your data in transit?</li>
+        </ol>
+    </li>
+  </ol>
+  </details>
 
-- Incident Response
-    - Preparation is critical to timely and effective investigation, response to, and recovery from security incidents to help minimize disruption to your organization.
-    - In AWS, the following practices facilitate effective incident response:
-        - Detailed logging is available that contains important content, such as file access and changes.
-        - Event scan be automatically processed and trigger tools that automate responses through the use of AWS APIs.
-        - You can pre-provision tool in ganda “clean room” using AWS CloudFormation. This allows you to carry out forensics in a safe, isolated environment.
+- <details>
+  <summary>Incident Response</summary>
+  <br>
+  <ol>
+    <li>Preparation is critical to timely and effective investigation, response to, and recovery from security incidents to help minimize disruption to your organization.</li>
+    <li>In AWS, the following practices facilitate effective incident response:
+        <ol>
+        <li>Detailed logging is available that contains important content, such as file access and changes.</li>
+        <li>Event scan be automatically processed and trigger tools that automate responses through the use of AWS APIs.</li>
+        <li>You can pre-provision tool in ganda “clean room” using AWS CloudFormation. This allows you to carry out forensics in a safe, isolated environment.</li>
+        </ol>
+    </li>
+  </ol>
+  </details>
 
 ### Whitepaper
 - [Security Pillar whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
