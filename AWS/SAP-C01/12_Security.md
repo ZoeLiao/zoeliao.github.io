@@ -6,7 +6,7 @@
 - AWS is responsible for securing the underlying infrastructure that supports
 the cloud, and you’re responsible for anything you put on the cloud or connect to the
 cloud.
-- [!shared_security_responsibility](./images/12_Security/shared_security_responsibility.png)
+- ![shared_security_responsibility](./images/12_Security/shared_security_responsibility.png)
 - AWS Security Responsibilities:
     - Protects the global infrastructure that runs all of the services offered in the AWS Cloud.
     - Provides several reports from third-party auditors who have verified AWS compliance with a variety of computer security standards and regulations.
