@@ -4,3 +4,4 @@
 - 0.2 replica set](./02_replica_set.md)
 - [0.3 Deployment](./03_deployment.md)
 - [0.4 Namespace](./04_namespace.md)
+- [0.5 Docker Command](./05_docker_command.md)
