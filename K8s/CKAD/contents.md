@@ -1,2 +1,6 @@
 # The Study Notes of Certified Kubernetes Application Developer (CKAD) 
 - [0.0 About Exam](./00_exam.md)
+- 0.1 pod(./01_pod.md)
+- 0.2 replica set](./02_replica_set.md)
+- [0.3 Deployment](./03_deployment.md)
+- [0.4 Namespace](./04_namespace.md)
