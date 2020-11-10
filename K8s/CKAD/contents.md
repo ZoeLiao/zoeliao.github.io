@@ -6,3 +6,4 @@
 - [0.4 Namespace](./04_namespace.md)
 - [0.5 Docker Command](./05_docker_command.md)
 - [0.6 Environment Variables](./06_env.md)
+- [0.7 Service Account](./07_service_account.md)
