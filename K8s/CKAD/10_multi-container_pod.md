@@ -1,7 +1,6 @@
 # Multi-container Pod
 
-- Have multi-cotainers in a pod.
-- Share the same lifecycle, network and storage
+- Definition: Have multi-cotainers in a pod, they share the same lifecycle, network and storage.
 - pod.yaml:
     ```yaml
     apiVersion: v1
