@@ -37,6 +37,7 @@
       value: "taintedNode" 
       effect: "NoSchedule"
   ```
+
 ---
 
 ## Node Selectors
@@ -65,7 +66,7 @@
 ---
 
 ## Affinity
-- Ensure a pod be scheduled on a specific node.
+- To ensure a pod to be scheduled on a specific node.
 
 ### Types
 - Available:
@@ -74,23 +75,22 @@
 - Planned:
     - requiredDuringSchedulingRequiredDuringExecution
 
-- yaml:
-  ```yaml
-  apiVersion: v1
-  kind: Pod
-  metadata:
-    name: myapp
-  spec:
-    containers:
-    - name: mycontainer
-      image: mycontainer
-    affinity:
-      nodeAffinity:
-        requiredDuringSchedulingIgnoreDuringExecution:
-          nodeSelectorTrems:
-          - matchExpressions:
-            - key: size
-              operator: In
-              values:
-              - Small
-  ```
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  containers:
+  - name: mycontainer
+    image: mycontainer
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoreDuringExecution:
+        nodeSelectorTrems:
+        - matchExpressions:
+          - key: size
+            operator: In
+            values:
+            - Small
+```

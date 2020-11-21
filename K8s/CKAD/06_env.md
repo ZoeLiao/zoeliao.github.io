@@ -26,16 +26,16 @@ spec:
 - configMap
     - Create a configMap:
         - Imperative way: `kubectl create configmap`
-            - from literal:
-            ```bash
-            kubectl create configmap \
-            <config_name> --from-literal=<key>=<value>`
-            ```
-            - from file:
-            ```bash
-            kubectl create configmap \
-            <config_name> --from-file=<path-to-file>`
-            ```
+            - from literal:  
+                ```bash
+                kubectl create configmap \
+                <config_name> --from-literal=<key>=<value>`
+                ```
+            - from file:  
+                ```bash
+                kubectl create configmap \
+                <config_name> --from-file=<path-to-file>`
+                `````
         - Declarative way: `kubectl create -f`
         ```yaml
         apiVersion: v1
@@ -103,20 +103,20 @@ spec:
 - Security Context
     - You can write in pod or container level.
     - Priority: container > pod
-    ```yaml
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: pod
-    spec:
-      securityContext: <-- pod level
-        runAsUser: 1000
-      containers:
-          - name: ubuntu
-            image: ubuntu
-            command: ["echo", "hi"]
-              securityContext: <-- container level
-                runAsUser: 1000
-                capabilities:  <-- container level only
-                    add: ["MAC_ADMIN"] 
-    ```
+        ```yaml
+        apiVersion: v1
+        kind: Pod
+        metadata:
+          name: pod
+        spec:
+          securityContext: <-- pod level
+            runAsUser: 1000
+          containers:
+              - name: ubuntu
+                image: ubuntu
+                command: ["echo", "hi"]
+                  securityContext: <-- container level
+                    runAsUser: 1000
+                    capabilities:  <-- container level only
+                        add: ["MAC_ADMIN"] 
+        ```
