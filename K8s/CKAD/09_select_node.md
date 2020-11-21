@@ -14,7 +14,9 @@
         - 1. Noschedule: a pod will not be scheduled on the tainted node.
         - 2. PreferNoSchedule: k8s will try to avoid to schedule a pod on a node but it is not guartenteed.
         - 3. NoExecute: new pods will not be scheduled on the node, and for what has been scheduled on the node will be removed.
-- command: `kubectl taint nodes <node_name> key=value:taint-effect`, e.g., `kubectl taint nodes mynode app=myweb:NoExecute`
+- command:
+    - Format: `kubectl taint nodes <node_name> key=value:taint-effect`
+    - Example: `kubectl taint nodes mynode app=myweb:NoExecute`
 
 ### Toleration
 - Object: pod
@@ -35,13 +37,15 @@
       value: "taintedNode" 
       effect: "NoSchedule"
   ```
+---
 
 ## Node Selectors
 - Make a pod be scheduled on a specific node.
 
-### How
 - Label a Node:
-    - Command line: `kubectl label nodes <node_name> <label_key>=<label_value>`, e.g., `kubectl label nodes mynode size=small`
+    - Command line:
+        - Format: `kubectl label nodes <node_name> <label_key>=<label_value>`
+        - Example: `kubectl label nodes mynode size=small`
 
 - Selcet the Node by label:
   ```yaml
@@ -57,6 +61,8 @@
       size: small
   ```
 - If you want to select nodes in a more comlicated situation, use affinity instead. 
+
+---
 
 ## Affinity
 - Ensure a pod be scheduled on a specific node.
