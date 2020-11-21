@@ -29,31 +29,31 @@
             - 1 Mi (Megibyte) == 2 ^ 20 bytes
             - 1 Ki (Kilibyte) == 2 ^ 10 bytes
 - pod.yaml
-  ```yaml
-  apiVersion: v1
-  kind: Pod
-  metadata:
-    name: webapp
-    labels:
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
       name: webapp
-  spec:
-    containers:
-    - name: webapp
-      image: webapp
-      ports:
-        containerPort: 8080
-      resources:
-        requests:
-          memory: "2Gi"
-          cpu: 1
-        limits:
-          memory: "3Gi" <- can > throttle, but the pod will be terminated
-          cpu: 2        <- can not > throttle
-  ```
-
-
-
-
+      labels:
+        name: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: webapp
+        ports:
+          containerPort: 8080
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: 1
+          limits:
+            memory: "3Gi" <- can > throttle, but the pod will be terminated
+            cpu: 2        <- can not > throttle
+    ```
+   
+   
+   
+   
 ## Reference
 - [Offical Doc - Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
-
+   

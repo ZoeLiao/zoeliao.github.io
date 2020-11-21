@@ -7,3 +7,4 @@
 - [0.5 Docker Command](./05_docker_command.md)
 - [0.6 Environment Variables](./06_env.md)
 - [0.7 Service Account](./07_service_account.md)
+- [0.8 Resource Requirement](./08_resource_requirement.md)
