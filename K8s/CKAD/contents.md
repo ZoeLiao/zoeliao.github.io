@@ -12,3 +12,7 @@
 - [10. Multi Container Pod](./10_multi-container_pod.md)
 - [11. Probe](./11_probes.md)
 - [12. Container Logging and Monitor](./12_container_logging_n_monitor.md)
+- [13. Label Selector and Annotation](./13_label_selector_annotation.md)
+- [14. Rolling Update and Rollback](./14_rolling_update_n_rollback.md)
+- [15. Jobs and crontjob](./15_jobs_n_cronjob.md)
+- [16. Ingress](./16_ingress.md)
