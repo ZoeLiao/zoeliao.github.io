@@ -80,7 +80,7 @@ spec:
 
 ## Storage Classes
 - Static Provisioning: storage is created manually
-- Dynamic Provisioning: create by cloud and attach to PV
+- Dynamic Provisioning: use Storage Classes to create storage by automatically and attach to PV
 ```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -123,7 +123,7 @@ kind: StatefulSets
 apiVersion: v1
 kindL Service
 metadata:
-  name: mysql-h
+  name: mysql-h  <-- service Name
 spce:
   ports:
     - port: 3306
@@ -136,5 +136,31 @@ pod:
 subdomain: mysql-h
 hostname: mysql-pod <-- A record for all 
 ```
+- You need to assign serviceName in StatefulSet and Service
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql-deployment
+  labels:
+    app: mysql
 
+spec:
+  serviceName: mysql-h <-- the same as the metadata.name in Service
+  replicas: 3
+  ...
+```
 
+### Storage in StatefulSet
+- use volumeClaim template to create each PVC for each pod
+```yaml
+volumeClaimTemplates:
+- metadata:
+    name: data-volume
+  spec:
+    accessmodes:
+      - ReadWriteOnce
+    storageClassName: google-storage
+    ...
+```
+- order: pod -> PVC -> storage Classes -> PV -> attach PV to PVC
