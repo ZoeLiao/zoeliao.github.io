@@ -20,3 +20,5 @@
         - Services & Networking
 - Cost: 300 USD, with one Free retake within the next 12 months.
 - The mode of delivery is Online. It tests your hands on skills. You can refer to the k8s official documentation.
+- 2 hours with 19 questions, you can skip difficult questions.
+- use alias
