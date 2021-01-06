@@ -51,12 +51,6 @@
         - custom dashboard
         - let you more effectively set, monitor, and enforce SLOs on services.
 
-## Envoy
-- Istio uses an extended version of the Envoy proxy. 
-- Envoy is a high-performance proxy developed in C++ to mediate all inbound and outbound traffic for all services in the service mesh.
-- Envoy proxies are the only Istio components that interact with data plane traffic.
-
 ## References
 - [primer the who what and why of service mesh](https://thenewstack.io/primer-the-who-what-and-why-of-service-mesh)
 - [Istio](https://istio.io/latest/)
-- [Envoy](https://www.envoyproxy.io/)
