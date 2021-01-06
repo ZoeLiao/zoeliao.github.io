@@ -16,6 +16,10 @@
     - For example:
         - The metrics of tracing (Jeager, Kiali)
         - circut breaker
+- Reverse Proxy in Envoy:
+    - request -> Proxy -> target
+    - The client knows they have called the proxy.
+    - The client thinks the results have come from the proxy.
 
 ## References
 - [Envoy](https://www.envoyproxy.io/)
