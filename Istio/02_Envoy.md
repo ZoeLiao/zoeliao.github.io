@@ -1,4 +1,4 @@
-# Envoy
+# 2. Envoy
 
 ## Why not use Envoy directly?
 - Service Mesh is one of application of Envoy.

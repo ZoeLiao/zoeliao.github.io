@@ -1,4 +1,4 @@
-# Introduction
+# 1. Introduction
 - [Github - istio](https://github.com/istio/istio)
 - [Website - istio](https://istio.io/)
 
