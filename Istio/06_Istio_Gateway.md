@@ -3,9 +3,15 @@
 ## Why we need Istio Gateway?
 - Because the proxies run after a container makes a request, so if users access a specific pod directly, you can't use routing.
     - Without Ingress Gateway:
+    <div hidden>
     ```
+    @startuml noIngress
     web -> pod A
     web -> pod B
+    @enduml
+    ```
+    </div>
+    ![](noIngress.svg)
     ```
     - With Ingress Gateway (Edge Proxy):
     ```
@@ -115,3 +121,5 @@
                host: web1
                subset: test1
     ```
+
+- You an also use "Create Matching Routing" model to set routing

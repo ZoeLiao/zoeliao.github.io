@@ -17,5 +17,6 @@
     - Stream processing (with the Kafka Streams API or Spark)
     - De-coupling of system dependencies
     - Integration with Spark, Flink, Storm, Hadoop, and many other Big Data technologies
+- [Link](https://www.confluent.io/what-is-apache-kafka/?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.nonbrand_tp.prs_tgt.kafka_mt.xct_rgn.apac_lng.eng_dv.all&utm_term=kafka&creative=&device=c&placement=&gclid=CjwKCAiA9bmABhBbEiwASb35V6FsvGUJVMWiB0jnLTJgLjufAEedd3KpIWS5PBeRkvfbPT_0RY8PbhoChHAQAvD_BwE)
 
 
