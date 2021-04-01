@@ -61,7 +61,7 @@
 
 - Virtual Private Cloud (VPC) network is a virtual version of a physical network, implemented inside of Google's production network.
 - It associates with region.
-- [Google VPC Website](https://cloud.google.com/vpc/?utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-pkws-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_396376275084-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+Networking+~+Virtual+Private+Cloud+(VPC)_virtual+private+cloud+(vpc)-general+-+Products-KWID_43700049545994499-kwd-838310732081&userloc_9040379-network_g&utm_term=KW_gcp%20virtual%20private%20cloud%20vpc&gclid=EAIaIQobChMIoeOfvOra7wIVs51LBR1XGwIBEAAYASAAEgKAH_D_BwE&gclsrc=aw.ds)
+- [Google VPC Website](https://cloud.google.com/vpc/)
 
 ## Compute Engine (= AWS EC2)
 ![compute_engine_creation.png](./images/compute_engine_creation.png)
@@ -77,7 +77,7 @@
         - M type: memory optimize, e.g., m1-megamem-96 (96 vCPU, 1.4 TP memory)
         - N type: general purpose with balance price
         - C type: compute optimize, e.g., c2-standard-4 (4 vCPU, 16 GB memory)
-- [Google Compute Engine Website](https://cloud.google.com/compute/?hl=zh-tw&utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-all-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_495210764390-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+Compute+~+Compute+Engine_compute+engine-compute+engine-KWID_43700024746598754-kwd-353549069938&userloc_9040379-network_g&utm_term=KW_gcp%20compute%20engine&gclid=EAIaIQobChMIqv-z5ura7wIVy4NLBR07hwIoEAAYASAAEgKeKvD_BwE&gclsrc=aw.ds)
+- [Google Compute Engine Website](https://cloud.google.com/compute/)
 
 ## Database
 ![database_compare_1](./images/database_compare_1.png)
@@ -85,18 +85,35 @@
 - [Compare Google Database](https://cloud.google.com/products/databases)
 
 ### RDBMS
-- [Cloud SQL](https://cloud.google.com/sql/?hl=zh-tw&utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-all-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_504956233194-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Databases%20~%20Cloud%20SQL_cloud%20storage-sql%20google%20cloud-KWID_43700008268946557-kwd-141453384537&userloc_9040379-network_g&utm_term=KW_g%20cloud%20sql&gclid=EAIaIQobChMIwdmirfLa7wIVwpVLBR3PcgYqEAAYASAAEgLlufD_BwE&gclsrc=aw.ds)
+- [Cloud SQL](https://cloud.google.com/sql/)
     - MySQL
     - PostgreSQL
     - SQL Server
-- [Cloud Spanner](https://cloud.google.com/spanner/?hl=zh-tw&utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-skws-all-all-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_455589160969-ADGP_Hybrid%20%7C%20SKWS%20-%20EXA%20%7C%20Txt%20~%20Databases%20~%20Cloud%20Spanner_Spanner-Spanner-KWID_43700018047550003-kwd-283006412836&userloc_9040379-network_g&utm_term=KW_cloud%20spanner&gclid=EAIaIQobChMI2KjKyvLa7wIVASUrCh1yJQTcEAAYASAAEgLFUPD_BwE&gclsrc=aw.ds):
+- [Cloud Spanner](https://cloud.google.com/spanner/):
     - Fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability.
 
 ### NoSQL
-- [BigTable](https://cloud.google.com/bigtable/?hl=zh-tw&utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-all-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_495210764597-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Databases%20~%20Cloud%20Bigtable_big%20data-big%20table-KWID_43700020290826132-kwd-303045184251&userloc_9040379-network_g&utm_term=KW_google%20bigtable&gclid=EAIaIQobChMI0_KZ4fLa7wIVlX0rCh1K-g82EAAYASAAEgJrY_D_BwE&gclsrc=aw.ds):
+- [BigTable](https://cloud.google.com/bigtable/):
     - A fully managed, scalable NoSQL database service for large analytical and operational workloads.
 - [Firestore](https://cloud.google.com/firestore)
     - Easily develop rich applications using a fully managed, scalable, and serverless document database.
-- [Memory Store](https://cloud.google.com/memorystore/?hl=zh-tw&utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-all-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_455589155713-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+Databases+~+Memorystore_cloud+memorystore-KWID_43700035200283462-kwd-475861324760&userloc_9040379-network_g&utm_term=KW_google%20memorystore&gclid=EAIaIQobChMIgdy0gvPa7wIVlH0rCh17AArNEAAYASAAEgLmMfD_BwE&gclsrc=aw.ds)
+- [Memory Store](https://cloud.google.com/memorystore/)
     - Redis
     - Memcache
+
+## BigQuery
+![bigquery_demo.png](./images/bigquery_demo.png)
+- Serverless, highly scalable, and cost-effective multi-cloud data warehouse designed for business agility.
+- Charge on usage.
+- [Google BigQuery Website](https://cloud.google.com/bigquery/)
+
+## Google Data Flow
+![google_dataflow.png](./images/google_dataflow.png)
+- A fully managed service for executing Apache Beam pipelines within the Google Cloud Platform ecosystem
+- [Google Dataflow website](https://cloud.google.com/dataflow/)
+
+## Pub/Sub
+![pub_sub_flow.png](./images/pub_sub_flow.png)
+- Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications.
+- Supports push and pull.
+- [Pub/Sub Website](https://cloud.google.com/pubsub/)
