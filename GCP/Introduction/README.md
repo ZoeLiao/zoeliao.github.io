@@ -117,3 +117,50 @@
 - Pub/Sub is a fully-managed real-time messaging service that allows you to send and receive messages between independent applications.
 - Supports push and pull.
 - [Pub/Sub Website](https://cloud.google.com/pubsub/)
+
+## Cloud Monitoring
+![cloud_monitoring_dashboard.png](./images/cloud_monitoring_dashboard.png)
+- Gain visibility into the performance, availability, and health of your applications and infrastructure.
+- Key features:
+    - [SLO](https://cloud.google.com/blog/products/management-tools/practical-guide-to-setting-slos) monitoring
+    - Custom metrics
+    - Google Cloud intergration
+    - Monitoring agent
+    - Logging integration
+    - Dashboards
+    - Group/cluster support
+    - Alerting
+    - Uptime monitoring
+- [Google Cloud Monitoring Website](https://cloud.google.com/monitoring)
+
+## AI
+![AI_platform_pipeline.png](./images/AI_platform_pipeline.png)
+- AI solutions:
+    - [Cloud AutoML](https://cloud.google.com/automl/):
+        - Train high-quality custom machine learning models with minimal effort and machine learning expertise.
+    - [Cloud Natural Language](https://cloud.google.com/natural-language)
+    - [Cloud Translation](https://cloud.google.com/translate)
+    - [Vision AI](https://cloud.google.com/vision)
+    - [Dialogflow](https://cloud.google.com/dialogflow):
+        - AI Chatbot.
+- Industry-specific AI solutions:
+    - [Contact Center AI](https://cloud.google.com/solutions/contact-center):
+        - Google's conversational AI for contact center excellence
+    - [Document AI](https://cloud.google.com/document-ai):
+        - Unlock insights from documents with machine learning.
+- [AI Platform](https://cloud.google.com/ai-platform):
+    - AutoML + MLOps + AI Platform (old edition): to train your machine learning models at scale, to host your trained model in the cloud, and to use your model to make predictions about new data.
+- [AI Hub](https://cloud.google.com/ai-hub/):
+    - Hosted AI repository with one-click deployment for machine learning teams.
+
+## Security
+- Data Storage Security: Encryption in Transit and Encryption at Rest.
+- Secure Internet Connection.
+- Identity and Access Management.
+
+## Keep updates
+- If you want to get the updates of GCP, you can refer to [GCP This Month](https://acloud.guru/series/gcp-this-month).
+
+## References
+- [acloud guru - Introduction to Google Cloud
+](https://acloudguru.com/course/introduction-to-google-cloud)
